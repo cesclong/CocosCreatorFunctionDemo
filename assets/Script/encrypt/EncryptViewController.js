@@ -1,4 +1,6 @@
-// Learn
+/**
+ * Cocos Creator 加密功能Demo
+ */
 
 //使用npm库文件npm install --save js-base64
 const Base64 = require('js-base64').Base64;
@@ -30,10 +32,10 @@ cc.Class({
 
         // let str1 = Base64.encode('dankogai');  // ZGFua29nYWk=
         // console.log(`encrypt:${str1}`);
-        // let nameCrypt = Base64.encode('我的芬宝宝');
-        // console.log(`encode:${nameCrypt}`);
-        // let decodeStr = Base64.decode(nameCrypt);
-        // console.log(`decode:${decodeStr}`);
+        let nameCrypt = Base64.encode('我的芬宝宝');
+        console.log(`encode:${nameCrypt}`);
+        let decodeStr = Base64.decode(nameCrypt);
+        console.log(`decode:${decodeStr}`);
         // Base64.encode('小飼弾');    // 5bCP6aO85by+
         // Base64.encodeURI('小飼弾'); // 5bCP6aO85by-
 
